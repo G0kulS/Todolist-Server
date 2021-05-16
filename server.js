@@ -11,7 +11,7 @@ const nodemailer = require("nodemailer");
 app.use(cors())
 app.use(express.json())
 app.listen(process.env.PORT || 4000);
-require('dotenv').config();
+
 const URL = "mongodb+srv://dbuser:helloworld@cluster0.zwvcb.mongodb.net/Remainder?retryWrites=true&w=majority";
 const DB = "Remainder";
 var transport = nodemailer.createTransport({
